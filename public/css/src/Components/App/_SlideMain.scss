@@ -234,13 +234,26 @@
 		opacity: 0;
 	}
 }
+// POSICIONAMENTO DOS CONTAINER DA INTEGRA 
 
-// .circle {
-// 	width: 10px;
-// 	height: 10px;
-// 	border-radius: 50%;
-// 	background: DodgerBlue;
-// 	margin: 60px auto;
-
-// 	animation: circle 1s linear infinite;
-// }
+.containerSlides {
+    position: absolute;
+    top: 200rem;
+    z-index: 1000;
+    transition: .5s ease-in-out;
+    & .container-item-invoice{
+        color:red
+    }
+    & .App-Internal__balance{
+        position: absolute;
+        top:0px;
+        z-index: 100;
+        
+        overflow: hidden; 
+    }
+    & .App-Internal-present{
+        position: absolute;
+        top:0px;
+        width: 100%;
+    }
+}

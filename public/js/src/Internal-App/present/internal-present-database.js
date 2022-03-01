@@ -28,4 +28,3 @@ internalpresentData.forEach(item =>{
 
 })
 area.innerHTML = model
-console.log(area)

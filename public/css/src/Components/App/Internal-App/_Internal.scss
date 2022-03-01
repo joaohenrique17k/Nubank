@@ -3,8 +3,6 @@
     max-width: 375px;
     margin:0 auto;
     background-color:white;
-    // padding: 0.5rem;
-
 }
 .App-Internal img{
     width: 30%;
@@ -26,7 +24,6 @@
     position: relative;
     overflow-y: hidden; 
     z-index: 100;
-    // height: 100vh;
     max-width: 375px;
     height: 100vh;
     
@@ -176,20 +173,6 @@
 [data="internal-slide"] {
     height: calc(var(--vh, 1vh) * 30);
 }
-
-// .App-Internal__area::-webkit-scrollbar {
-//     width: 1em;
-//   }
-   
-// .App-Internal__area::-webkit-scrollbar-track {
-//     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-//   }
-   
-// .App-Internal__area::-webkit-scrollbar-thumb {
-//     background-color: darkgrey;
-//     outline: 1px solid slategrey;
-//   }
-
 
 .internal_invoice__body{
     display: flex;

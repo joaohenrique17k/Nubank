@@ -7,7 +7,6 @@ margin-top: 0px;
 height: 0vh;
 width: 100%;
 overflow: hidden;
-// transition: 1s ;
 }
 .container .title {
     display: flex;
@@ -16,7 +15,6 @@ overflow: hidden;
     border-bottom: 1px solid #e3e3e3;
   }
 .container .title h5 {
-    // background: red;
     max-width: 190px;
     margin: 0 auto;
     font-size: .9rem;
@@ -37,9 +35,6 @@ overflow: hidden;
     }
 }
 
-// .swiper-pagination1 {
-//     position: absolute;
-// }
 .swiper-pagination1 .swiper-scrollbar-drag  {
     height: 5px;
     background: $background-color;
@@ -47,10 +42,7 @@ overflow: hidden;
     top: 99.2vh;
     z-index: 10000;
 }
-// .swiper-pagination1 {
-//     position: absolute;
-//     bottom: 10px;
-//   }
+
 .swiper-scrollbar .swiper-scrollbar-drag{
     height: 5px;
     background: $background-color;

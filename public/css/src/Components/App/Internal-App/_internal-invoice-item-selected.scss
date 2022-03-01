@@ -5,7 +5,6 @@
 .area-container .Iternal__item{
     background-color: white;
     text-align: center;
-    // animation: sla 4s forwards;
     & .content-image{
         height: 130px;
         background: url('../../../public/img/map.png');
@@ -85,34 +84,6 @@
 
 }
 
-
-
-
-// .teste{
-//    
-// }
-// @keyframes sla {
-//    from{
-//        height: 100%;
-//    }
-//    to{
-//        height: 0%;
-//    }
-// }
-// .area-container {
-//     position: absolute;
-//     z-index: 1000;
-//     max-width: 375px;
-//   }
-// .add {
-//     height: 0px;
-// }
-// .aqui{
-//     animation: sla 1s forwards;
-
-// }
-
-
 @keyframes sla {
        from{
         height: 0px;
@@ -122,17 +93,12 @@
        }
     }
 
-
-
-
-
 .container-item-invoice-integra {
         transition: .4s;
         position: absolute;
         z-index: 1000;
         max-width: 375px;
         width: 100vw;
-        // height: 643px;
         height: 0px;
         overflow: hidden; 
         background: white;

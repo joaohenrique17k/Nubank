@@ -33,12 +33,3 @@ const invoiceContainerMoviment = () =>{
   })
 }
 invoiceContainerMoviment()
-
-const body = document.querySelector('body')
-console.log(body.offsetTop)
-const krlo = document.querySelector('.container-item-invoice')
-console.log(krlo)
-krlo.scrollTo({
-  to: 0,
-  behavior:'smooth'
-})

@@ -174,36 +174,3 @@
 .container-search-balance .App-Internal__area{
     height: calc(var(--vh, 1vh) * 85);
 }
-
-// .search-internal-balance{
-//     transition: 1s !important;
-// }
-
-
-
-// POSICIONAMENTO DOS CONTAINER DA INTEGRA 
-
-.containerSlides {
-    position: absolute;
-    top: 200rem;
-    z-index: 1000;
-    transition: .5s ease-in-out;
-    & .container-item-invoice{
-        // display: none;
-        color:red
-    }
-    & .App-Internal__balance{
-        position: absolute;
-        top:0px;
-        z-index: 100;
-        
-        // display: none;
-        overflow: hidden; 
-    }
-    & .App-Internal-present{
-        position: absolute;
-        // display: none;
-        top:0px;
-        width: 100%;
-    }
-}
