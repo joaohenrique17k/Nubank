@@ -1,0 +1,30 @@
+// @import '../../../Variables/';
+
+// .App-Iternal__area{
+//     overflow-y: scroll;
+//     height: 310px;
+// }
+
+.App-Iternal__item{
+    display: flex;
+    justify-content: center;
+    
+        & .container-image{
+            width: 70px;
+            height: 70px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & .image{
+                width: 45px;
+                height: 45px;
+                object-fit: contain;
+                position: relative;
+                display: block; 
+            
+            }   
+            // display: flex;
+        }
+}

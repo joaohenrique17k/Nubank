@@ -1,0 +1,13 @@
+@import '../Variables/Variables';
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: $font;
+    transition:0.3s ease-in-out;
+}
+
+.OpenMenuService{
+    background: #202020;
+opacity: 0.8;
+}

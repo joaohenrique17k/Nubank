@@ -1,0 +1,63 @@
+.container{
+    height: 10vh;
+background-color: white;
+position: absolute;
+z-index: 1000000000000 !important;
+margin-top: 0px;
+height: 0vh;
+width: 100%;
+overflow: hidden;
+// transition: 1s ;
+}
+.container .title {
+    display: flex;
+    background-color: white;
+    padding:.8rem;
+    border-bottom: 1px solid #e3e3e3;
+  }
+.container .title h5 {
+    // background: red;
+    max-width: 190px;
+    margin: 0 auto;
+    font-size: .9rem;
+    text-transform: uppercase;
+  }
+
+.container .draggable{
+    padding: .8rem 1.5rem;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+// .swiper-pagination1 {
+//     position: absolute;
+// }
+.swiper-pagination1 .swiper-scrollbar-drag  {
+    height: 5px;
+    background: $background-color;
+    position: absolute;
+    top: 99.2vh;
+    z-index: 10000;
+}
+// .swiper-pagination1 {
+//     position: absolute;
+//     bottom: 10px;
+//   }
+.swiper-scrollbar .swiper-scrollbar-drag{
+    height: 5px;
+    background: $background-color;
+    position: absolute;
+    
+    z-index: 10000;
+}
+.swiper-horizontal > .swiper-scrollbar {
+     bottom: 14px !important;
+}

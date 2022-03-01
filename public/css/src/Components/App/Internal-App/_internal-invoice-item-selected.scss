@@ -1,0 +1,146 @@
+@import '../../../Variables/Variables';
+.container-item-invoice {
+    position: relative;
+  }
+.area-container .Iternal__item{
+    background-color: white;
+    text-align: center;
+    // animation: sla 4s forwards;
+    & .content-image{
+        height: 130px;
+        background: url('../../../public/img/map.png');
+        position: relative;
+    }
+    & .container-image{
+        position: relative;
+        top: -35px;
+        background-color:$background-color;
+        width: 70px;
+        margin:0 auto;
+        border-radius: 50%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .image{
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+      
+    }
+    & .data{
+        color:$App-subColor;
+        text-transform: uppercase;
+    }
+    & .name{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color:black;
+        margin: 1rem 0 .5rem 0;
+    }
+    & .money{
+        font-size: 1.4rem;
+        color:black;
+    }
+
+}
+.area-container .Iternal__item{
+    & .tag{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap:.4rem;
+        & .btn-create-tag, button{
+            padding: 0.5rem;
+            background-color:$App-background-footer;
+            border-radius: 3px;
+            border:none;
+            font-size: 0.85rem;
+        }
+    }
+    & .container-input-tag{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:0 .5rem;
+        margin-top: 1rem;
+        & input{
+            width: 90%;
+            background-color: #f2f2f2;
+            border:none;
+            height: 30px;
+            border-right: 3px solid #0060DF;
+            outline: none;
+        }
+        & button{
+            border:none;
+            background-color: transparent;
+            & img{
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+}
+
+
+
+
+// .teste{
+//    
+// }
+// @keyframes sla {
+//    from{
+//        height: 100%;
+//    }
+//    to{
+//        height: 0%;
+//    }
+// }
+// .area-container {
+//     position: absolute;
+//     z-index: 1000;
+//     max-width: 375px;
+//   }
+// .add {
+//     height: 0px;
+// }
+// .aqui{
+//     animation: sla 1s forwards;
+
+// }
+
+
+@keyframes sla {
+       from{
+        height: 0px;
+       }
+       to{
+        height: 400px;
+       }
+    }
+
+
+
+
+
+.container-item-invoice-integra {
+        transition: .4s;
+        position: absolute;
+        z-index: 1000;
+        max-width: 375px;
+        width: 100vw;
+        // height: 643px;
+        height: 0px;
+        overflow: hidden; 
+        background: white;
+        & .closed-integra-invoice {
+            border: none;
+            background: transparent;
+            padding: 10px;
+            position: absolute;
+            z-index: 100;
+          }
+      }

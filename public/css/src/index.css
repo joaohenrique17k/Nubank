@@ -1,0 +1,1247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.container-position-body {
+  display: flex;
+  justify-content: center;
+  background: #e3e3e3;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.container-master {
+  overflow: hidden;
+  position: absolute;
+}
+
+.container-swiper-controller {
+  position: relative;
+}
+
+.container-app {
+  display: flex;
+  height: 100vh;
+  max-width: 375px;
+}
+
+.container-app .pagina-inicial {
+  background: #8a05be;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.container-app .pagina-inicial .logo {
+  max-width: 30%;
+}
+
+.container-app .app {
+  background: #8a05be;
+  position: absolute;
+  max-width: 375px;
+  overflow-y: hidden;
+  height: 100vh;
+  color: white;
+  width: 100vw;
+  transform: translate3d(500px, 0, 0);
+}
+
+.app-container {
+  padding: 0.5rem;
+}
+
+.container-app .animation {
+  -webkit-animation: initialDiv 1s forwards;
+          animation: initialDiv 1s forwards;
+  display: block;
+}
+
+@-webkit-keyframes initialDiv {
+  0% {
+    transform: translate3d(200px, 0, 0);
+  }
+  50% {
+    transform: translate3d(-40px, 0px, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+  }
+}
+
+@keyframes initialDiv {
+  0% {
+    transform: translate3d(200px, 0, 0);
+  }
+  50% {
+    transform: translate3d(-40px, 0px, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+  }
+}
+.container-app .app .app-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.container-app .app .app-title img {
+  max-width: 15%;
+}
+
+.menuHeader {
+  opacity: 0%;
+  -webkit-animation: initialName 0.3s forwards 3s;
+          animation: initialName 0.3s forwards 3s;
+  height: 10vh;
+}
+
+.slide-main {
+  height: 50vh;
+}
+
+.app-slide .swiper-wrapper .app-slide__invoice .app-slide__invoice__body, .app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body, .app-slide .swiper-wrapper .app-slide__present .app-slide__present__body {
+  height: 40vh;
+}
+
+.app-footer {
+  margin-top: 4rem;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.position-body-slides {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@-webkit-keyframes initialName {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes initialName {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.container-app .app .app-title-arrow {
+  max-width: 3%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 0.3rem;
+  transform: rotate(180deg);
+}
+
+.container-app .app .app-title-arrow-rotate {
+  transform: rotate(0deg);
+}
+
+.container-app .app .app-qrcode {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+.container-app .app .app-qrcode img {
+  max-width: 34%;
+}
+.container-app .app .app-qrcode span {
+  font-size: 0.9rem;
+}
+
+.container-app .app .app-list-options {
+  margin-top: 2rem;
+}
+.container-app .app .app-list-options ul {
+  list-style: none;
+  max-width: 260px;
+  margin: 0 auto;
+}
+.container-app .app .app-list-options ul li {
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}
+.container-app .app .app-list-options ul li span {
+  margin-left: 1rem;
+}
+.container-app .app .app-list-options ul li span + span {
+  display: block;
+  font-size: 0.7rem;
+  color: #ca8ee2;
+}
+.container-app .app .app-list-options ul li .app-last-item {
+  margin-left: 1.4rem;
+}
+.container-app .app .app-list-options ul li img {
+  max-width: 24px;
+  height: 24px;
+  transition: 0.5s ease-in-out;
+}
+.container-app .app .app-list-options ul .app-last-item__get-out {
+  display: flex;
+  justify-content: center;
+}
+.container-app .app .app-list-options ul li:hover {
+  opacity: 0.6;
+}
+.container-app .app .app-list-options ul li:hover > img {
+  filter: opacity(0.6) drop-shadow(0 0 0 red);
+}
+
+@media (max-width: 450px) {
+  .container-app {
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-app {
+    display: flex;
+    height: 100vh;
+    max-width: 100vw;
+  }
+
+  .app-container {
+    padding: 0.5rem;
+  }
+
+  .casa .App-Internal__balance {
+    width: 100vw;
+  }
+
+  .container-app .app {
+    max-width: 100vw;
+  }
+
+  .App-Internal, .container-item-invoice-integra, .App-Internal__balance {
+    max-width: 100vw !important;
+  }
+}
+@media (max-width: 314px) {
+  .App-Internal__balance .internal__balance__graphic .graphic {
+    gap: 0.1rem !important;
+    justify-content: center;
+  }
+
+  .container-app .app .app-title-arrow {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 300px) {
+  .app-footer .swiper-wrapper .app-slide__footer p {
+    font-size: 0.7rem;
+  }
+}
+.app-slide {
+  background-color: #8a05be;
+  margin-top: -30.3rem;
+  z-index: 100;
+  position: relative;
+  height: 100vh;
+  transition: 0.5s ease-in-out;
+}
+.app-slide .swiper-wrapper {
+  background-color: white;
+}
+.app-slide .swiper-wrapper .app-slide__invoice {
+  position: relative;
+  color: #df1b1b;
+}
+.app-slide .swiper-wrapper .app-slide__invoice .app-slide__invoice__line {
+  height: 170px;
+  width: 8px;
+  background: linear-gradient(to bottom, #fa8a0a 0, #fa8a0a 20%, #df1b1b 20%, #df1b1b 66%, #69c04f 66%, #69c04f 100%);
+  position: absolute;
+  right: 13px;
+  top: 17px;
+  border-radius: 6px;
+}
+.app-slide .swiper-wrapper .app-slide__invoice .app-slide__invoice__body {
+  padding: 2rem 1rem 3.5rem 1rem;
+  height: 240px;
+  height: 40vh;
+}
+.app-slide .swiper-wrapper .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__image {
+  margin-bottom: 1rem;
+  max-width: 8%;
+}
+.app-slide .swiper-wrapper .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__title {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.app-slide .swiper-wrapper .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__money {
+  font-size: 2rem;
+}
+.app-slide .swiper-wrapper .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__money span {
+  font-weight: bold;
+}
+.app-slide .swiper-wrapper .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__description {
+  text-transform: uppercase;
+  color: #b0b0b0;
+  font-size: 0.8rem;
+}
+.app-slide .swiper-wrapper .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__button {
+  padding: 0.4rem 1.4rem;
+  border-radius: 4px;
+  border: 1px solid #df1b1b;
+  background-color: transparent;
+  color: #df1b1b;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.app-slide .swiper-wrapper .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__button:hover {
+  background: #8a05be;
+  color: white;
+  border: 1px solid #8a05be;
+}
+.app-slide .swiper-wrapper .app-slide__balance {
+  background-color: white;
+}
+.app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body {
+  position: relative;
+  padding: 2rem 1rem 2rem 1rem;
+  height: 240px;
+  height: 40vh;
+}
+.app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body .app-slide__balance__image {
+  margin-bottom: 1rem;
+  max-width: 8%;
+}
+.app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body .graphic {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+  margin-bottom: 0.8rem;
+}
+.app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body .graphic .graphic-item {
+  width: 4px;
+  height: 4px;
+  background-color: #8a05be;
+  border-radius: 5px;
+}
+.app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body .graphic .graphicColor {
+  background: #e3e3e3;
+}
+.app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body .app-slide__balance__money {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 0.2rem;
+  width: 170px;
+}
+.app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body .app-slide__balance__money span {
+  font-weight: bold;
+  color: black;
+}
+.app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body p {
+  color: #e3e3e3;
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+}
+.app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body p span {
+  color: #69c04f;
+}
+.app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body .eye {
+  position: absolute;
+  right: 0px;
+  top: 127px;
+  padding-right: 1rem;
+  width: 44px;
+  z-index: 10;
+  cursor: pointer;
+}
+.app-slide .swiper-wrapper .app-slide__balance .app-slide__balance__body .line-eye::after {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: #7A7B7F;
+  position: absolute;
+  right: 14.5px;
+  top: 136px;
+  padding-right: 1rem;
+  transform: rotate(131deg);
+}
+.app-slide .swiper-wrapper .app-slide__present .app-slide__present__body {
+  background-color: white;
+  padding: 2rem 1rem 2rem 1rem;
+  height: 240px;
+  height: 40vh;
+}
+.app-slide .swiper-wrapper .app-slide__present .app-slide__present__body .app-slide__present__image {
+  margin-bottom: 1rem;
+  max-width: 8%;
+}
+.app-slide .swiper-wrapper .app-slide__present .app-slide__present__body .app-slide__present__money {
+  font-size: 2rem;
+  color: #8a05be;
+  margin: 1rem 0;
+}
+.app-slide .swiper-wrapper .app-slide__present .app-slide__present__body .app-slide__present__money span {
+  font-weight: bold;
+  color: #8a05be;
+}
+.app-slide .swiper-wrapper .app-slide__present .app-slide__present__body p {
+  color: black;
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+  max-width: 200px;
+}
+.app-slide .swiper-wrapper .app-slide__present .app-slide__present__body p span {
+  color: #8a05be;
+}
+.app-slide .swiper-wrapper .app-slide__invoice__footer {
+  background-color: #e3e3e3;
+  color: #646464;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.8rem 1rem;
+}
+.app-slide .swiper-wrapper .app-slide__invoice__footer .app-slide__footer__image {
+  width: 20px;
+  height: 20px;
+}
+.app-slide .swiper-wrapper .app-slide__invoice__footer .app-slide__footer__description {
+  font-size: 0.75rem;
+}
+.app-slide .swiper-wrapper .app-slide__invoice__footer .arrow {
+  transform: rotate(90deg);
+  width: 16px;
+  height: 16px;
+}
+.app-slide .swiper-pagination {
+  position: relative;
+  top: 30px;
+}
+.app-slide .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: white;
+  opacity: 100%;
+}
+.app-slide .swiper-pagination .swiper-pagination-bullet-active:hover {
+  background-color: white;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+  background: #cacaca;
+  opacity: 100;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet:hover {
+  background-color: white;
+}
+
+.blur {
+  filter: blur(0.5rem);
+  background: #e1e1e1;
+  width: 200px;
+}
+
+[balance-money] {
+  width: 200px;
+}
+
+.app .app-slide-closed {
+  -webkit-animation: circle 1s forwards;
+          animation: circle 1s forwards;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.app-footer {
+  margin-top: 4rem;
+}
+
+.app-footer .swiper-wrapper {
+  background-color: #8a05be;
+}
+.app-footer .swiper-wrapper .swiper-slide {
+  height: 90px;
+  width: 95px !important;
+  margin-right: 9px !important;
+}
+
+@media (max-width: 370px) {
+  .app-footer .swiper-wrapper .swiper-slide {
+    width: 89px !important;
+  }
+
+  .app-footer .app-slide__footer p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 340px) {
+  .app-footer .swiper-wrapper .swiper-slide {
+    width: 84px !important;
+  }
+
+  .app-footer .app-slide__footer p {
+    font-size: 0.7rem;
+  }
+}
+.app-slide__footer {
+  background-color: #9d33c8;
+  width: 150px;
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app-slide__footer p {
+  font-size: 0.9rem;
+}
+.app-slide__footer img {
+  width: 23px;
+  height: 23px;
+}
+
+.models__footer {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.OpenMenuService {
+  background: #202020;
+  opacity: 0.8;
+}
+
+.App-Internal {
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.App-Internal img {
+  width: 30%;
+}
+
+.App-Internal .App-Internal__image--full {
+  width: 20px;
+  height: 20px;
+}
+
+.App-Internal__area {
+  height: 400px;
+  overflow-y: scroll;
+  margin-top: 2rem;
+  height: calc(var(--vh, 1vh) * 60);
+}
+
+.App-Internal__area.active {
+  height: 100vh;
+}
+
+.App-Internal {
+  position: relative;
+  overflow-y: hidden;
+  z-index: 100;
+  max-width: 375px;
+  height: 100vh;
+}
+.App-Internal .app-slide__invoice .app-slide__invoice__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 180px !important;
+  padding: 0.5rem;
+  justify-content: center;
+}
+.App-Internal .app-slide__invoice .app-slide__invoice__body .invoice__vencimento {
+  text-align: center;
+}
+.App-Internal .app-slide__invoice .app-slide__invoice__body .invoice__vencimento .app-slide__invoice__money {
+  color: #2cafcf;
+}
+.App-Internal .app-slide__invoice .app-slide__invoice__body .invoice__vencimento .app-slide__invoice__sub-description {
+  color: #b0b0b0;
+  font-size: 0.8rem;
+}
+.App-Internal .app-slide__invoice .app-slide__invoice__body .invoice__vencimento .app-slide__invoice__sub-description span {
+  color: #69c04f;
+  font-weight: bold;
+}
+.App-Internal .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__money {
+  font-size: 2rem;
+  color: #df1b1b;
+}
+.App-Internal .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__money span {
+  font-weight: bold;
+}
+.App-Internal .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__description {
+  text-transform: uppercase;
+  color: #b0b0b0;
+  font-size: 0.8rem;
+}
+.App-Internal .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__button {
+  padding: 0.4rem 1.4rem;
+  border-radius: 4px;
+  border: 1px solid #df1b1b;
+  background-color: transparent;
+  color: #df1b1b;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.App-Internal .app-slide__invoice .app-slide__invoice__body .app-slide__invoice__button:hover {
+  background: #8a05be;
+  color: white;
+  border: 1px solid #8a05be;
+}
+.App-Internal .App-Internal__search {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-between;
+  position: absolute;
+  width: 98%;
+  background: white;
+  margin-top: -33px;
+  z-index: 1;
+  transition: 0.2s;
+}
+.App-Internal .App-Internal__search input {
+  min-width: 90%;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 1px;
+  height: 1.5rem;
+  outline: none;
+}
+.App-Internal .App-internal__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.App-Internal .App-internal__options .arrow {
+  transform: rotate(-90deg);
+}
+.App-Internal .App-internal__options .App-internal__closed {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.App-Internal .App-internal__options .App-internal__closed .arrow {
+  width: 10px;
+  height: 10px;
+}
+
+.models-internal-App__item {
+  display: none;
+}
+
+.App-Internal-App-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+.App-Internal-App-item .description {
+  display: flex;
+  color: black;
+  gap: 2.5rem;
+}
+.App-Internal-App-item .description img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.App-Internal-App-item .description .name, .App-Internal-App-item .description .money, .App-Internal-App-item .description .sub-money {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.App-Internal-App-item .description .tags {
+  display: flex;
+  gap: 0.1rem;
+}
+.App-Internal-App-item .description .tags p {
+  font-size: 0.7rem;
+}
+.App-Internal-App-item .data {
+  font-size: 0.75rem;
+  color: #b0b0b0;
+}
+
+.swiper-pagination3 {
+  display: flex;
+  justify-content: center;
+}
+.swiper-pagination3 .swiper-pagination-bullet-active {
+  background-color: #8a05be;
+  opacity: 100%;
+}
+.swiper-pagination3 .swiper-pagination-bullet-active:hover {
+  background-color: #8a05be;
+}
+
+[data=internal-slide] {
+  height: calc(var(--vh, 1vh) * 30);
+}
+
+.internal_invoice__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 149px;
+  color: black;
+}
+.internal_invoice__body .invoice-escription {
+  text-align: center;
+  width: 300px;
+}
+
+.App-Iternal__item {
+  display: flex;
+  justify-content: center;
+}
+.App-Iternal__item .container-image {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App-Iternal__item .container-image .image {
+  width: 45px;
+  height: 45px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  display: block;
+}
+
+.app-invoice__menu {
+  background-color: #3d2b40;
+  display: flex;
+  justify-content: space-between;
+}
+.app-invoice__menu .invoice__menu {
+  height: 100vh;
+}
+.app-invoice__menu .invoice__menu .invoice__menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 25%;
+  background-color: #443147;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  justify-content: center;
+  cursor: pointer;
+}
+.app-invoice__menu .invoice__menu .invoice__menu-item:hover {
+  background-color: #8a05be;
+}
+.app-invoice__menu .invoice__menu .invoice__menu-item:hover > p {
+  color: white;
+}
+.app-invoice__menu .invoice__menu .invoice__menu-item img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.app-invoice__menu .invoice__menu .invoice__menu-item p {
+  color: #b0b0b0;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.app-invoice__menu .invoice__info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-around;
+  padding-right: 1rem;
+}
+.app-invoice__menu .invoice__info .invoice__info-card {
+  color: #e3e3e3;
+}
+.app-invoice__menu .invoice__info .invoice__info-card .money {
+  text-align: end;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+.app-invoice__menu .invoice__info .invoice__info-card .money.orange {
+  color: #fa8a0a;
+}
+.app-invoice__menu .invoice__info .invoice__info-card .money.blue {
+  color: #2cafcf;
+}
+.app-invoice__menu .invoice__info .invoice__info-card .money.green {
+  color: #69c04f;
+}
+
+.App-Internal__balance {
+  position: relative;
+  color: black;
+  background-color: white;
+  height: 100vh;
+  max-width: 375px;
+}
+.App-Internal__balance .app-slide__balance .App-Internal__search {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem;
+  position: absolute;
+  width: 98%;
+  background: white;
+  margin-top: -41px;
+  z-index: 1;
+  transition: 0.2s;
+  justify-content: space-between;
+}
+.App-Internal__balance .app-slide__balance .App-Internal__search input {
+  min-width: 90%;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 1px;
+  height: 1.5rem;
+  outline: none;
+}
+.App-Internal__balance .App-internal__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  height: calc(var(--vh, 1vh) * 10);
+}
+.App-Internal__balance .App-internal__options .arrow {
+  transform: rotate(-90deg);
+}
+.App-Internal__balance .App-internal__options .App-internal__closed {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.App-Internal__balance .App-internal__options .App-internal__closed .arrow {
+  width: 10px;
+  height: 10px;
+}
+.App-Internal__balance .swiper-pagination5 {
+  position: absolute;
+  width: 32px !important;
+  top: -31px;
+  height: 19px;
+  left: 45% !important;
+}
+.App-Internal__balance .swiper-pagination5 .swiper-pagination-bullet-active {
+  background-color: #8a05be;
+  opacity: 100%;
+}
+.App-Internal__balance .swiper-pagination5 .swiper-pagination-bullet-active:hover {
+  background-color: #8a05be;
+}
+.App-Internal__balance .swiper-pagination5 .swiper-pagination-bullet {
+  width: 7px !important;
+  height: 7px !important;
+}
+.App-Internal__balance .swiper-pagination5 .swiper-pagination-bullet:hover {
+  background-color: #8a05be;
+}
+
+.App-Internal__balance img {
+  width: 30%;
+}
+
+.App-Internal__balance .App-Internal__image--full {
+  width: 20px;
+  height: 20px;
+}
+
+.App-Internal__balance .internal__balance__money {
+  text-align: center;
+  font-size: 0.9rem;
+  height: 10vh;
+}
+.App-Internal__balance .internal__balance__money .value-money {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.App-Internal__balance .internal__balance__money .value-money span {
+  font-weight: bold;
+}
+.App-Internal__balance .internal__balance__money .descripton-money span {
+  color: #e3e3e3;
+}
+.App-Internal__balance .internal__balance__graphic {
+  margin-top: 3rem;
+}
+.App-Internal__balance .internal__balance__graphic .balance__graphic__context {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 3rem;
+}
+.App-Internal__balance .internal__balance__graphic .balance__graphic__context p {
+  color: #b0b0b0;
+  font-size: 0.7rem;
+}
+.App-Internal__balance .internal__balance__graphic .balance__graphic__context p span {
+  display: block;
+  font-weight: bold;
+  text-align: end;
+}
+.App-Internal__balance .internal__balance__graphic .graphic {
+  display: flex;
+  align-items: flex-end;
+  max-width: 320px;
+  margin: 2rem auto 3rem auto;
+  gap: 0.4rem;
+  height: 40vh;
+}
+.App-Internal__balance .internal__balance__graphic .graphic .graphic-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.App-Internal__balance .internal__balance__graphic .graphic .graphic-item .graphicColunm {
+  height: 20px;
+  display: inline-block;
+  width: 3px;
+  border-radius: 5px;
+  background-color: #e3e3e3;
+}
+.App-Internal__balance .internal__balance__graphic .graphic .graphic-item .graphic-date {
+  font-size: 0.75rem;
+  display: block;
+  transform: rotate(-90deg);
+  color: #b0b0b0;
+}
+.App-Internal__balance .internal__balance__graphic .graphic .graphic-item .graphicColor {
+  color: #8a05be;
+}
+.App-Internal__balance .internal__balance__graphic .graphic .graphic-item .graphicBackground {
+  background-color: #8a05be;
+}
+.App-Internal__balance .internal__balance__footer__item {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  height: 20vh;
+}
+.App-Internal__balance .internal__balance__footer__item .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.App-Internal__balance .internal__balance__footer__item .item img {
+  width: 27px;
+  height: 27px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.App-Internal__balance .internal__balance__footer__item .item p {
+  font-size: 0.75rem;
+}
+
+.container-search-balance .App-Internal__area {
+  height: calc(var(--vh, 1vh) * 85);
+}
+
+.containerSlides {
+  position: absolute;
+  top: 200rem;
+  z-index: 1000;
+  transition: 0.5s ease-in-out;
+}
+.containerSlides .container-item-invoice {
+  color: red;
+}
+.containerSlides .App-Internal__balance {
+  position: absolute;
+  top: 0px;
+  z-index: 100;
+  overflow: hidden;
+}
+.containerSlides .App-Internal-present {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.App-Internal__area1 {
+  overflow-y: scroll;
+  height: 400px;
+  margin-top: 1rem;
+  height: calc(var(--vh, 1vh) * 69);
+}
+
+.App-Internal-present .app-slide__present__body {
+  text-align: center;
+  padding: 1rem;
+}
+.App-Internal-present .app-slide__present__body .description {
+  color: #8a05be;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.App-Internal-present .app-slide__present__body .money {
+  color: #b0b0b0;
+}
+.App-Internal-present .app-slide__present__body .money span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.App-Internal-present .menu__present {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: black;
+  margin-top: 2rem;
+}
+.App-Internal-present .menu__present .item__present {
+  padding: 1rem;
+  border: 1px solid #ebebeb;
+  width: 100%;
+}
+.App-Internal-present .menu__present .item__present img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.App-Internal-present .menu__present .item__present h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+.App-Internal-present .menu__present .item__present p {
+  font-size: 0.77rem;
+  color: #b0b0b0;
+}
+
+.container-item-invoice {
+  position: relative;
+}
+
+.area-container .Iternal__item {
+  background-color: white;
+  text-align: center;
+}
+.area-container .Iternal__item .content-image {
+  height: 130px;
+  background: url("../../../public/img/map.png");
+  position: relative;
+}
+.area-container .Iternal__item .container-image {
+  position: relative;
+  top: -35px;
+  background-color: #8a05be;
+  width: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area-container .Iternal__item .container-image .image {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.area-container .Iternal__item .data {
+  color: #b0b0b0;
+  text-transform: uppercase;
+}
+.area-container .Iternal__item .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  margin: 1rem 0 0.5rem 0;
+}
+.area-container .Iternal__item .money {
+  font-size: 1.4rem;
+  color: black;
+}
+
+.area-container .Iternal__item .tag {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.area-container .Iternal__item .tag .btn-create-tag, .area-container .Iternal__item .tag button {
+  padding: 0.5rem;
+  background-color: #e3e3e3;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.85rem;
+}
+.area-container .Iternal__item .container-input-tag {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+}
+.area-container .Iternal__item .container-input-tag input {
+  width: 90%;
+  background-color: #f2f2f2;
+  border: none;
+  height: 30px;
+  border-right: 3px solid #0060DF;
+  outline: none;
+}
+.area-container .Iternal__item .container-input-tag button {
+  border: none;
+  background-color: transparent;
+}
+.area-container .Iternal__item .container-input-tag button img {
+  width: 16px;
+  height: 16px;
+}
+
+@-webkit-keyframes sla {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 400px;
+  }
+}
+
+@keyframes sla {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 400px;
+  }
+}
+.container-item-invoice-integra {
+  transition: 0.4s;
+  position: absolute;
+  z-index: 1000;
+  max-width: 375px;
+  width: 100vw;
+  height: 0px;
+  overflow: hidden;
+  background: white;
+}
+.container-item-invoice-integra .closed-integra-invoice {
+  border: none;
+  background: transparent;
+  padding: 10px;
+  position: absolute;
+  z-index: 100;
+}
+
+.container {
+  height: 10vh;
+  background-color: white;
+  position: absolute;
+  z-index: 1000000000000 !important;
+  margin-top: 0px;
+  height: 0vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container .title {
+  display: flex;
+  background-color: white;
+  padding: 0.8rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.container .title h5 {
+  max-width: 190px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.container .draggable {
+  padding: 0.8rem 1.5rem;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .draggable img {
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination1 .swiper-scrollbar-drag {
+  height: 5px;
+  background: #8a05be;
+  position: absolute;
+  top: 99.2vh;
+  z-index: 10000;
+}
+
+.swiper-scrollbar .swiper-scrollbar-drag {
+  height: 5px;
+  background: #8a05be;
+  position: absolute;
+  z-index: 10000;
+}
+
+.swiper-horizontal > .swiper-scrollbar {
+  bottom: 14px !important;
+}/*# sourceMappingURL=index.css.map */

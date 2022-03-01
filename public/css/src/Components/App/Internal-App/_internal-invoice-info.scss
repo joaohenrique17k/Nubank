@@ -1,0 +1,63 @@
+@import '../../../Variables/Variables';
+.app-invoice__menu {
+    background-color: $App-background-internal-invoice; 
+    display: flex;
+    justify-content: space-between;
+    & .invoice__menu{
+        height: 100vh;
+        & .invoice__menu-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100px;
+            height: 25%;
+            background-color:#443147;
+            gap:.5rem;
+            padding: .5rem;
+            margin-bottom: .3rem;
+            justify-content: center;
+            cursor: pointer;
+            &:hover{
+                background-color: $background-color;
+            }
+            &:hover > p{
+                color:white;
+            }
+            & img{
+                width: 40px;
+                height: 40px;      
+                object-fit: contain;          
+            }
+            & p{
+                color:$App-subColor;
+                font-size: 0.85rem;
+                text-align: center;
+            }
+        }
+    }
+    & .invoice__info{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-around;
+        padding-right: 1rem;
+        & .invoice__info-card{
+            color:#e3e3e3;
+            & .money{
+                text-align: end;
+                font-weight: bold;
+                font-size: 1.15rem;
+
+            }
+            & .money.orange{
+                color:$App-orange-color;
+            }
+            & .money.blue{
+                color:$App-blue-color;
+            }
+            & .money.green{
+                color:$App-green-color;
+            }
+        }
+    }
+}

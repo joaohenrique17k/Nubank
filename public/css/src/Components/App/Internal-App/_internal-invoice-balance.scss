@@ -1,0 +1,209 @@
+.App-Internal__balance{
+    position: relative;
+    color:black;
+    background-color: white;
+    height: 100vh;
+    max-width: 375px;
+    & .app-slide__balance{
+        .App-Internal__search{
+        display: flex;
+        gap:.5rem;
+        align-items: center;
+        padding: .5rem;
+        position: absolute;
+        width: 98%;
+        background: white;
+        margin-top: -41px;
+        z-index: 1;
+        transition: 0.2s;
+        justify-content: space-between;
+        & input{
+            min-width: 90%;
+            background: #f0f0f0;
+            border:none;
+            border-radius: 1px;
+            height: 1.5rem;
+            outline: none;
+        }
+    }
+    }
+    & .App-internal__options{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+        height: calc(var(--vh, 1vh) * 10);
+        & .arrow{
+            transform: rotate(-90deg);
+        }
+        & .App-internal__closed{
+            display: flex;
+            align-items: center;
+            gap:.3rem;
+            & .arrow{
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+    }
+    & .swiper-pagination5 {
+        position: absolute;
+        width: 32px !important;
+        top: -31px;
+        height: 19px;
+        left: 45% !important;
+        & .swiper-pagination-bullet-active{
+            background-color: $background-color;
+            opacity: 100%;
+            &:hover{
+                background-color: $background-color;
+            }
+        }
+        & .swiper-pagination-bullet{
+            width: 7px !important;
+            height: 7px !important;
+            &:hover{
+                background-color: $background-color;
+            }
+        }
+    }
+}
+
+.App-Internal__balance img{
+    width: 30%;
+}
+.App-Internal__balance .App-Internal__image--full{
+    width: 20px;
+    height: 20px;
+}
+
+
+.App-Internal__balance{
+    .internal__balance__money{
+        text-align: center;
+        font-size: .90rem;
+        height: 10vh;
+        .value-money{
+            font-size: 2rem;
+            margin-bottom: .5rem;
+            span{
+                font-weight: bold;
+            }
+        }
+        .descripton-money{
+            span{
+                color:#e3e3e3;
+            }
+        }
+    }
+    .internal__balance__graphic{
+        margin-top: 3rem;
+        & .balance__graphic__context{
+            display: flex;
+            justify-content: flex-end;
+            margin:0 3rem;
+            p{
+                color:#b0b0b0;
+                font-size: .70rem;
+                span{
+                    display: block;
+                    font-weight: bold;
+                    text-align: end;
+                }
+            }
+        }
+        & .graphic{
+            display: flex;
+            align-items: flex-end;
+            max-width: 320px;
+            margin: 2rem auto 3rem auto;
+            gap: .4rem;
+            height: 40vh;
+            & .graphic-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: .6rem;
+                & .graphicColunm{
+                    height: 20px;
+                    display: inline-block;
+                    width: 3px;
+                    border-radius: 5px;
+                    background-color: #e3e3e3;
+                }
+                & .graphic-date{
+                    font-size: 0.75rem;
+                    display: block;
+                    transform: rotate(-90deg);
+                    color:#b0b0b0;
+                }
+                & .graphicColor{
+                    color: $background-color;
+                }
+                & .graphicBackground{
+                    background-color: $background-color;
+                }
+            }
+        }
+    }
+    & .internal__balance__footer__item{
+        display: flex;
+        justify-content: space-around;
+        height: 100px;
+        align-items: center;
+        height: 20vh;
+        & .item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:.4rem;
+            & img{
+                width: 27px;
+                height: 27px;
+                object-fit: contain;
+            }
+            & p{
+                font-size: .75rem;
+            }
+        }
+    }
+
+}
+
+.container-search-balance .App-Internal__area{
+    height: calc(var(--vh, 1vh) * 85);
+}
+
+// .search-internal-balance{
+//     transition: 1s !important;
+// }
+
+
+
+// POSICIONAMENTO DOS CONTAINER DA INTEGRA 
+
+.containerSlides {
+    position: absolute;
+    top: 200rem;
+    z-index: 1000;
+    transition: .5s ease-in-out;
+    & .container-item-invoice{
+        // display: none;
+        color:red
+    }
+    & .App-Internal__balance{
+        position: absolute;
+        top:0px;
+        z-index: 100;
+        
+        // display: none;
+        overflow: hidden; 
+    }
+    & .App-Internal-present{
+        position: absolute;
+        // display: none;
+        top:0px;
+        width: 100%;
+    }
+}
