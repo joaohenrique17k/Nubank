@@ -262,7 +262,6 @@
   margin-top: -30.3rem;
   z-index: 100;
   position: relative;
-  height: 100vh;
   transition: 0.5s ease-in-out;
 }
 .app-slide .swiper-wrapper {
@@ -683,7 +682,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0.5rem 0.9rem;
 }
 .App-Internal .App-internal__options .arrow {
   transform: rotate(-90deg);
@@ -761,6 +760,17 @@
 .internal_invoice__body .invoice-escription {
   text-align: center;
   width: 300px;
+}
+
+.InternalInvoice::after {
+  content: "";
+  height: 100%;
+  width: 2%;
+  background: linear-gradient(to bottom, #fa8a0a 0, #fa8a0a 25%, #2cafcf 25%, #2cafcf 80%, #69c04f 80%, #69c04f 100%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
 }
 
 .App-Iternal__item {

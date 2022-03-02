@@ -28,6 +28,7 @@
     height: 100vh;
     
     & .app-slide__invoice {
+       
         
         & .app-slide__invoice__body{
             display: flex;
@@ -109,7 +110,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0.5rem;
+        padding: 0.5rem .9rem;
         & .arrow{
             transform: rotate(-90deg);
         }
@@ -186,4 +187,17 @@
     
        
    }
+}
+
+
+
+.InternalInvoice::after{
+    content: "";
+    height: 100%;
+    width: 2%;
+    background: linear-gradient(to bottom, #fa8a0a 0, #fa8a0a 25%, $App-blue-color 25%, $App-blue-color 80%,$App-green-color 80%, $App-green-color 100%);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
 }

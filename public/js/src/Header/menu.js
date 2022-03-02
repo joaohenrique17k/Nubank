@@ -25,8 +25,19 @@ const controllerMenu = () =>{
 controllerMenu();
 
 
+function click(){
 const closedApp = document.querySelector('.app-last-item__get-out');
+let containerApp =  document.querySelector('.app');
+let headerAnimation = document.querySelector('.menuHeader');
 closedApp.addEventListener('click', ()=>{
-    let containerApp =  document.querySelector('.animation');
     containerApp.style.display = "none"
 })
+
+
+const logoTelaApp =  document.querySelector('.logoinicial');
+logoTelaApp.addEventListener('click', ()=>{
+    containerApp.style.display = "block"
+
+})
+}
+click()

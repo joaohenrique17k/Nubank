@@ -7,40 +7,12 @@ const itemsFooter = [
     {name:'Cartão Virtual',image:'public/img/white/virtual-card.png'},
     {name:'Organizador atalhos',image:'public/img/white/filter.png'}
 ]
-const menu = (arr) =>{
-    let newArray = [];
-   if(arr){
-    arr.forEach(item =>{
-        itemsFooter.forEach(x=>{
-            if(item.name === x.name){
-                newArray.push({name:x.name, image:x.image})
-            }
-        })
-    })
-    newArray.push({name:'Organizador atalhos',image:'public/img/white/filter.png'})
-}
-       let arrays = arr ? newArray : itemsFooter
-            const containerFooter  =  document.querySelector('.app-slide__footer__area');
- 
-        let modelFooter = '';
-        arrays.forEach((i, index) =>{
-        modelFooter += `<div class="swiper-slide app-slide__footer" ${index === 6 ? 'data="services"': ''}>
-                        <img class="slide__footer__image__item"src=${i.image} alt=${i.name}>
-                        <p class="slide__footer__name__item">${i.name}</p>
-                    </div>`;
-        })
-     containerFooter.innerHTML = modelFooter
-  
-}
-menu()
-
-
 function OpenMenuServicesFooter(){
     const containerApp = document.querySelector('.app-container')
     const btnClosedServices = document.querySelector('.closed-Sevices')
     const btnServices = document.querySelector('[data="services"]')
     const containerServices = document.querySelector('.container')
-    btnServices.classList.add('Closed')
+ 
     btnServices.addEventListener('click', ()=>{
         if(btnServices.classList.contains('Closed')){
             btnServices.classList.remove('Closed')
@@ -64,4 +36,33 @@ function OpenMenuServicesFooter(){
         }
     })
 }
-OpenMenuServicesFooter()
+const menu = (arr) =>{
+    let newArray = [];
+   if(arr){
+    arr.forEach(item =>{
+        itemsFooter.forEach(x=>{
+            if(item.name === x.name){
+                newArray.push({name:x.name, image:x.image})
+            }
+        })
+    })
+    newArray.push({name:'Organizador atalhos',image:'public/img/white/filter.png'})
+}
+       let arrays = arr ? newArray : itemsFooter
+            const containerFooter  =  document.querySelector('.app-slide__footer__area');
+ 
+        let modelFooter = '';
+        arrays.forEach((i, index) =>{
+        modelFooter += `<div class="swiper-slide app-slide__footer ${index === 6 ? 'Closed': ''}" ${index === 6 ? 'data="services"': ''}>
+                        <img class="slide__footer__image__item"src=${i.image} alt=${i.name}>
+                        <p class="slide__footer__name__item">${i.name}</p>
+                    </div>`;
+        })
+     containerFooter.innerHTML = modelFooter
+     OpenMenuServicesFooter()
+  
+}
+menu()
+
+
+
