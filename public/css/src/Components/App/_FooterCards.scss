@@ -6,27 +6,9 @@
     background-color: $background-color;
     & .swiper-slide{
     height: 90px;
-    width: 95px !important;
-    margin-right: 9px !important;
     }
 }
 
-@media (max-width:370px){
-    .app-footer .swiper-wrapper .swiper-slide{
-        width: 89px !important;
-    }
-    .app-footer  .app-slide__footer p{
-        font-size: .8rem;
-    }
-}
-@media (max-width:340px){
-    .app-footer .swiper-wrapper .swiper-slide{
-        width: 84px !important;
-    }
-    .app-footer  .app-slide__footer p{
-        font-size: .7rem;
-    }
-}
 .app-slide__footer{
     background-color: $App-background-card-footer;
     width: 150px;

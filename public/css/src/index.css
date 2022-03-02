@@ -518,28 +518,8 @@
 }
 .app-footer .swiper-wrapper .swiper-slide {
   height: 90px;
-  width: 95px !important;
-  margin-right: 9px !important;
 }
 
-@media (max-width: 370px) {
-  .app-footer .swiper-wrapper .swiper-slide {
-    width: 89px !important;
-  }
-
-  .app-footer .app-slide__footer p {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 340px) {
-  .app-footer .swiper-wrapper .swiper-slide {
-    width: 84px !important;
-  }
-
-  .app-footer .app-slide__footer p {
-    font-size: 0.7rem;
-  }
-}
 .app-slide__footer {
   background-color: #9d33c8;
   width: 150px;
@@ -593,6 +573,7 @@
   overflow-y: scroll;
   margin-top: 2rem;
   height: calc(var(--vh, 1vh) * 60);
+  scrollbar-width: none;
 }
 
 .App-Internal__area.active {
@@ -771,6 +752,10 @@
   right: 0;
   top: 0;
   z-index: 100;
+}
+
+.App-Internal__area::-webkit-scrollbar {
+  overflow-y: none;
 }
 
 .App-Iternal__item {
@@ -1033,6 +1018,7 @@
   height: 400px;
   margin-top: 1rem;
   height: calc(var(--vh, 1vh) * 69);
+  scrollbar-width: none;
 }
 
 .App-Internal-present .app-slide__present__body {
@@ -1235,14 +1221,6 @@
 .container .draggable img {
   width: 20px;
   height: 20px;
-}
-
-.swiper-pagination1 .swiper-scrollbar-drag {
-  height: 5px;
-  background: #8a05be;
-  position: absolute;
-  top: 99.2vh;
-  z-index: 10000;
 }
 
 .swiper-scrollbar .swiper-scrollbar-drag {
