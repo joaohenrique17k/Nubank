@@ -20,7 +20,7 @@ function OpenMenuServicesFooter(){
             containerApp.classList.add('OpenMenuService')
             containerServices.style.marginTop = "5.5em"
              setTimeout(()=>{
-                containerServices.style.height = "100vh"
+                containerServices.style.height = "100%"
              },100)
         }
     })
@@ -63,6 +63,3 @@ const menu = (arr) =>{
   
 }
 menu()
-
-
-

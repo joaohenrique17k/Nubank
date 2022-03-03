@@ -19,14 +19,14 @@
     scrollbar-width: none;
   }
 .App-Internal__area.active {
-    height: 100vh;
+    height: 100%;
 }
 .App-Internal{
     position: relative;
     overflow-y: hidden; 
     z-index: 100;
     max-width: 375px;
-    height: 100vh;
+    height: 100%;
     
     & .app-slide__invoice {
        
@@ -135,6 +135,7 @@
     justify-content: space-between;
     margin-bottom: 1rem;
     padding: 0.5rem;
+    height: calc(var(--vh, 1vh) * 9);
     & .description{
         display: flex;
         color:black;

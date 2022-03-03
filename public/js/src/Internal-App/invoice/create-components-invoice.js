@@ -93,7 +93,7 @@ function constructor_integra_invoice(item, index){
                 </div>`;
 
     container.innerHTML = model;
-    openContainer.style.height = '100vh'
+    openContainer.style.height = '100%'
    
 }
 function creating_item_in_localstorage(item, index){

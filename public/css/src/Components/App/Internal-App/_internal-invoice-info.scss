@@ -3,8 +3,9 @@
     background-color: $App-background-internal-invoice; 
     display: flex;
     justify-content: space-between;
+    height: calc(var(--vh, 1vh) * 100);
     & .invoice__menu{
-        height: 100vh;
+        height: 100%;
         & .invoice__menu-item{
             display: flex;
             flex-direction: column;
@@ -41,22 +42,30 @@
         align-items: end;
         justify-content: space-around;
         padding-right: 1rem;
+        text-align: end;
+        & h3{
+            text-align: end;
+        }
         & .invoice__info-card{
             color:#e3e3e3;
             & .money{
                 text-align: end;
                 font-weight: bold;
                 font-size: 1.15rem;
+                 text-align: end;
 
             }
             & .money.orange{
                 color:$App-orange-color;
+                text-align: end;
             }
             & .money.blue{
                 color:$App-blue-color;
+                text-align: end;
             }
             & .money.green{
                 color:$App-green-color;
+                text-align: end;
             }
         }
     }
