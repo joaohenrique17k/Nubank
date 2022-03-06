@@ -48,8 +48,9 @@
         }
         & .invoice__info-card{
             color:#e3e3e3;
+            text-align: end !important;
             & .money{
-                text-align: end;
+                text-align: end !important;
                 font-weight: bold;
                 font-size: 1.15rem;
                  text-align: end;
@@ -57,15 +58,15 @@
             }
             & .money.orange{
                 color:$App-orange-color;
-                text-align: end;
+                text-align: end !important;
             }
             & .money.blue{
                 color:$App-blue-color;
-                text-align: end;
+                text-align: end !important;
             }
             & .money.green{
                 color:$App-green-color;
-                text-align: end;
+                text-align: end !important;
             }
         }
     }

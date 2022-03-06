@@ -18,6 +18,9 @@
     height: calc(var(--vh, 1vh) * 60);
     scrollbar-width: none;
   }
+  .App-Internal__area::-webkit-scrollbar {
+    display: none;
+}
 .App-Internal__area.active {
     height: 100%;
 }

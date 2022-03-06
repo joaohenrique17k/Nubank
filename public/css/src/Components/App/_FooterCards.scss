@@ -4,12 +4,43 @@
     background-color: $background-color;
     & .swiper-slide{
     height: 90px;
+    // width: 90px !important;
+    // margin-right:10px !important;
     }
 }
-
+// @media(max-width:375px){
+//     .app-footer .swiper-wrapper .swiper-slide{
+//         width: 80px !important;
+//         margin-right:10px !important;
+//     }
+// }
+// @media (max-widht:324px){
+//     .app-footer .swiper-wrapper .swiper-slide{
+//         width: 80px !important;
+        
+//     }
+// }
+// @media (max-widht:306px){
+//     .app-footer .swiper-wrapper .swiper-slide{
+//         width: 75px !important;
+//     }
+// }
+// @media (max-widht:294px){
+//     .app-footer .swiper-wrapper .swiper-slide{
+//         width: 72px !important;
+//     }
+// }
+.app-footer{
+    overflow-y: scroll;
+    width: 100%;
+}
+.app-footer::-webkit-scrollbar {
+    display: none;
+}
 .app-slide__footer{
     background-color: $App-background-card-footer;
-    width: 150px;
+    max-width: 100px;
+    height: calc(var(--vh, 1vh) * 20) !important;
     padding:0.4rem;
     display: flex;
     flex-direction: column;
@@ -23,5 +54,15 @@
     }
 }
 .models__footer{
+    display: none;
+}
+
+.app-slide__footer__area{
+    display: inline-flex;
+    flex-direction: row;
+   gap: .5rem;
+}
+
+.app-slide__footer__area::-webkit-scrollbar {
     display: none;
 }

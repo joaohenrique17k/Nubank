@@ -8,6 +8,9 @@
     height: calc(var(--vh, 1vh) * 69);
     scrollbar-width: none;
 }
+.App-Internal__area1::-webkit-scrollbar {
+    display: none;
+}
 
 .App-Internal-present .app-slide__present__body{
     text-align: center;

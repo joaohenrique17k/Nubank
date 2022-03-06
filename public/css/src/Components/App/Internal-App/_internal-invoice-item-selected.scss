@@ -58,30 +58,30 @@
             font-size: 0.85rem;
         }
     }
-    & .container-input-tag{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding:0 .5rem;
-        margin-top: 1rem;
-        & input{
-            width: 90%;
-            background-color: #f2f2f2;
-            border:none;
-            height: 30px;
-            border-right: 3px solid #0060DF;
-            outline: none;
-        }
-        & button{
-            border:none;
-            background-color: transparent;
-            & img{
-                width: 16px;
-                height: 16px;
-            }
+
+}
+.container-input-tag{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0 .5rem;
+    margin-top: 1rem;
+    & input{
+        width: 90%;
+        background-color: #f2f2f2;
+        border:none;
+        height: 30px;
+        border-right: 3px solid #0060DF;
+        outline: none;
+    }
+    & button{
+        border:none;
+        background-color: transparent;
+        & img{
+            width: 16px;
+            height: 16px;
         }
     }
-
 }
 
 @keyframes sla {

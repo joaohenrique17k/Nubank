@@ -93,10 +93,10 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 0.2rem;
 }
 .container-app .app .app-title img {
-  max-width: 15%;
+  max-width: 10%;
 }
 
 .menuHeader {
@@ -104,6 +104,10 @@
   -webkit-animation: initialName 0.3s forwards 3s;
           animation: initialName 0.3s forwards 3s;
   height: calc(var(--vh, 1vh) * 6);
+}
+
+.container-header-description {
+  height: calc(var(--vh, 1vh) * 19);
 }
 
 .slide-main {
@@ -119,7 +123,7 @@
   height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
 }
 
 .position-body-slides {
@@ -166,19 +170,22 @@
   gap: 0.2rem;
 }
 .container-app .app .app-qrcode img {
-  max-width: 34%;
+  width: 25%;
 }
 .container-app .app .app-qrcode span {
   font-size: 0.9rem;
+  height: 3vh;
 }
 
 .container-app .app .app-list-options {
   margin-top: 2rem;
+  height: calc(var(--vh, 1vh) * 50);
 }
 .container-app .app .app-list-options ul {
   list-style: none;
   max-width: 260px;
   margin: 0 auto;
+  height: calc(var(--vh, 1vh) * 100);
 }
 .container-app .app .app-list-options ul li {
   transition: 0.5s ease-in-out;
@@ -188,6 +195,7 @@
   border-bottom: 1px solid white;
   padding: 0.5rem 0;
   margin-top: 0.5rem;
+  height: 7%;
 }
 .container-app .app .app-list-options ul li span {
   margin-left: 1rem;
@@ -262,9 +270,10 @@
 }
 .app-slide {
   background-color: #8a05be;
-  margin-top: -30.3rem;
   z-index: 100;
-  position: relative;
+  position: absolute;
+  max-width: 357px;
+  top: 4rem;
   transition: 0.5s ease-in-out;
 }
 .app-slide .swiper-wrapper {
@@ -521,9 +530,19 @@
   height: 90px;
 }
 
+.app-footer {
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.app-footer::-webkit-scrollbar {
+  display: none;
+}
+
 .app-slide__footer {
   background-color: #9d33c8;
-  width: 150px;
+  max-width: 100px;
+  height: calc(var(--vh, 1vh) * 20) !important;
   padding: 0.4rem;
   display: flex;
   flex-direction: column;
@@ -538,6 +557,16 @@
 }
 
 .models__footer {
+  display: none;
+}
+
+.app-slide__footer__area {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.app-slide__footer__area::-webkit-scrollbar {
   display: none;
 }
 
@@ -575,6 +604,10 @@
   margin-top: 2rem;
   height: calc(var(--vh, 1vh) * 60);
   scrollbar-width: none;
+}
+
+.App-Internal__area::-webkit-scrollbar {
+  display: none;
 }
 
 .App-Internal__area.active {
@@ -834,24 +867,25 @@
 }
 .app-invoice__menu .invoice__info .invoice__info-card {
   color: #e3e3e3;
+  text-align: end !important;
 }
 .app-invoice__menu .invoice__info .invoice__info-card .money {
-  text-align: end;
+  text-align: end !important;
   font-weight: bold;
   font-size: 1.15rem;
   text-align: end;
 }
 .app-invoice__menu .invoice__info .invoice__info-card .money.orange {
   color: #fa8a0a;
-  text-align: end;
+  text-align: end !important;
 }
 .app-invoice__menu .invoice__info .invoice__info-card .money.blue {
   color: #2cafcf;
-  text-align: end;
+  text-align: end !important;
 }
 .app-invoice__menu .invoice__info .invoice__info-card .money.green {
   color: #69c04f;
-  text-align: end;
+  text-align: end !important;
 }
 
 .App-Internal__balance {
@@ -1032,6 +1066,10 @@
   scrollbar-width: none;
 }
 
+.App-Internal__area1::-webkit-scrollbar {
+  display: none;
+}
+
 .App-Internal-present .app-slide__present__body {
   text-align: center;
   padding: 1rem;
@@ -1136,14 +1174,15 @@
   border: none;
   font-size: 0.85rem;
 }
-.area-container .Iternal__item .container-input-tag {
+
+.container-input-tag {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0 0.5rem;
   margin-top: 1rem;
 }
-.area-container .Iternal__item .container-input-tag input {
+.container-input-tag input {
   width: 90%;
   background-color: #f2f2f2;
   border: none;
@@ -1151,11 +1190,11 @@
   border-right: 3px solid #0060DF;
   outline: none;
 }
-.area-container .Iternal__item .container-input-tag button {
+.container-input-tag button {
   border: none;
   background-color: transparent;
 }
-.area-container .Iternal__item .container-input-tag button img {
+.container-input-tag button img {
   width: 16px;
   height: 16px;
 }

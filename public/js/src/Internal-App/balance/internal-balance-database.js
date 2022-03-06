@@ -2,14 +2,14 @@ const databaseBalance = () => {
     const area = document.querySelector('.App-Internal__area__balance');
     let model = "";
     const databasebalance1 = [
-        {category: 'Transferência recebida', name: 'Marina Soares', money:'R$ 414,10',date='Sábado', image:'public/img/purple/deposit_1.png'},
-        {category: 'Transferência recebida', name: 'Gabriel Lima', money:'R$ 300,00',date='Sábado', image:'public/img/purple/deposit_1.png'},
-        {category: 'Transferência enviada', name: 'Rachel Jordan', money:'R$ 300,00',date='Domingo', image:'public/img/purple/deposit.png'},
-        {category: 'Transferência devolvida', name: 'Gabriel Lima', money:'R$ 300,00',date='08 FEV', image:'public/img/purple/deposit_1.png'},
-        {category: 'Transferência enviada', name: 'Marina Soares', money:'R$ 300,00',date='07 FEV', image:'public/img/purple/deposit.png'},
-        {category: 'Pagamento', name: 'Cartão Nubank', money:'R$ 1.337,13',date='04 FEV', image:'public/img/purple/card.png'},
-        {category: 'Transferência devolvida', name: 'Gabriel Lima', money:'R$ 300,00',date='03 FEV', image:'public/img/purple/deposit_1.png'},
-        {category: 'Transferência devolvida', name: 'Gabriel Lima', money:'R$ 300,00',date='03 FEV', image:'public/img/purple/deposit_1.png'},
+        {category: 'Transferência recebida', name: 'Marina Soares', money:'R$ 414,10',date:'Sábado', image:'public/img/purple/deposit_1.png'},
+        {category: 'Transferência recebida', name: 'Gabriel Lima', money:'R$ 300,00',date:'Sábado', image:'public/img/purple/deposit_1.png'},
+        {category: 'Transferência enviada', name: 'Rachel Jordan', money:'R$ 300,00',date:'Domingo', image:'public/img/purple/deposit.png'},
+        {category: 'Transferência devolvida', name: 'Gabriel Lima', money:'R$ 300,00',date:'08 FEV', image:'public/img/purple/deposit_1.png'},
+        {category: 'Transferência enviada', name: 'Marina Soares', money:'R$ 300,00',date:'07 FEV', image:'public/img/purple/deposit.png'},
+        {category: 'Pagamento', name: 'Cartão Nubank', money:'R$ 1.337,13',date:'04 FEV', image:'public/img/purple/card.png'},
+        {category: 'Transferência devolvida', name: 'Gabriel Lima', money:'R$ 300,00',date:'03 FEV', image:'public/img/purple/deposit_1.png'},
+        {category: 'Transferência devolvida', name: 'Gabriel Lima', money:'R$ 300,00',date:'03 FEV', image:'public/img/purple/deposit_1.png'},
     ];
 
     databasebalance1.forEach(item =>{

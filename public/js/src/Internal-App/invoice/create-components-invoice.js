@@ -85,10 +85,7 @@ function constructor_integra_invoice(item, index){
                             ${date ? get_items_from_localStorage(index,  'button') : ''}
                             
                         </div>
-                    <div class="container-input-tag">
-                        <input data="search1" type="text" name="" id=""/>
-                        <button class="btn-create-tag"><img src="public/img/add.png"/></button>
-                    </div>
+                    
                     </div>
                 </div>`;
 

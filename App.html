@@ -15,17 +15,19 @@
 </head>
 <body class="container-position-body">
     <section class="container-master">
-        <div class="container">
+        <div class="container ">
             <div class="title">
                 <img class ="closed-Sevices" src="public/img/purple/arrow-back.png" alt="">
                 <h5>Organizador de atalhos</h5>
             </div>
-            <div class="draggable" draggable="true"><p>Indicar amigos</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
-            <div class="draggable" draggable="true"><p>Depositar</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
-            <div class="draggable" draggable="true"><p>Transferir</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
-            <div class="draggable" draggable="true"><p>Pagar</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
-            <div class="draggable" draggable="true"><p>Bloquear Cartão</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
-            <div class="draggable" draggable="true"><p>Cartão Virtual</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
+            <div id="items">
+                <div class="draggable" ><p>Indicar amigos</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
+                <div class="draggable" ><p>Depositar</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
+                <div class="draggable" ><p>Transferir</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
+                <div class="draggable" ><p>Pagar</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
+                <div class="draggable" ><p>Bloquear Cartão</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
+                <div class="draggable" ><p>Cartão Virtual</p><img src="public/img/grey/order.png" alt="arraste para cima ou para baixo"></div>
+            </div>
           </div>
         <div class="container-app">
             <div class="pagina-inicial">
@@ -44,10 +46,12 @@
                             <img  constroller="menu"class="app-title-arrow closed"src="public/img/arrow.svg" alt="Lista opções">
                         </div>
                         <div class="navigation">
-                            <div class="app-qrcode">
-                                <img src="public/img/white/qrcode1.png" alt="Qrcode da sua conta!">
-                                <span>Agência 0001</span>
-                                <span>Conta 682265-3</span>
+                            <div class="container-header-description">
+                                <div class="app-qrcode">
+                                    <img src="public/img/white/qrcode1.png" alt="Qrcode da sua conta!">
+                                    <span>Agência 0001</span>
+                                    <span>Conta 682265-3</span>
+                                </div>
                             </div>
                             <nav class="app-list-options">
                                 <ul>
@@ -156,13 +160,11 @@
                         </div>
                         <footer>
                             <div class="app-footer">
-                                <div class="swiper-container">
-                                    <div class="swiper s2">
-                                        <div class="swiper-wrapper app-slide__footer__area">
+                              
+                                        <div class="app-slide__footer__area">
                                             
                                         </div>
-                                    </div>
-                                </div>
+                                  
                             </div>
                         </footer>
                 </div>
@@ -170,7 +172,13 @@
                 <section class="container-item-invoice" data="selectContainerIntegra">
                     <div class="container-item-invoice-integra">
                          <button class="closed-integra-invoice"><img src="public/img/purple/arrow-back.png" alt=""></button>
-                         <div class="area-container"></div>
+                         <div class="area-container">
+
+                         </div>
+                         <div class="container-input-tag">
+                            <input data="search1" type="text" name="" id=""/>
+                            <button class="btn-create-tag"><img src="public/img/add.png"/></button>
+                        </div>
                     </div>
                      <div class="App-Internal InternalInvoice" >
                          <div class="swiper-container">
@@ -371,6 +379,8 @@
             </div>
         </div>
     </section>
+    <script src="https://cdn.rawgit.com/chrisbateman/impetus/master/dist/impetus.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
     <script src="public/js/dist/scripts.js"></script>
 </body>
 </html>
